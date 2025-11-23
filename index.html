@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัว - รัฐปคัลภ์ พจนารถ</title>
+    <style>
+        /* CSS สำหรับการตกแต่ง */
+        :root {
+            /* กำหนดสีหลักที่ใช้ในหน้า */
+            --primary-color: #007bff; /* สีน้ำเงินสดใส */
+            --secondary-color: #6c757d; /* สีเทา */
+            --background-color: #f8f9fa; /* สีพื้นหลังอ่อน */
+            --card-background: #ffffff; /* สีพื้นหลังการ์ด */
+            --text-color: #343a40; /* สีข้อความหลัก */
+            --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background-color: var(--card-background);
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px); /* เลื่อนขึ้นเล็กน้อยเมื่อชี้ */
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.2em;
+            margin-top: 0;
+            font-weight: 400;
+        }
+
+        .info-section {
+            margin-top: 30px;
+            border-top: 2px solid #eee;
+            padding-top: 20px;
+            text-align: left;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .info-item strong {
+            color: var(--primary-color);
+            width: 120px; /* กำหนดความกว้างให้ส่วนหัวข้อ */
+            flex-shrink: 0;
+        }
+        
+        /* สไตล์สำหรับ Skills */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skills-list li {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.2s;
+        }
+
+        .skills-list li:hover {
+            background-color: #0056b3; /* สีเข้มขึ้นเมื่อชี้ */
+        }
+        
+        /* ไอคอน (ใช้สัญลักษณ์ Unicode แทน) */
+        .icon {
+            margin-right: 10px;
+            color: var(--primary-color);
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-card">
+            <h1>สวัสดีครับ! 👋 ผม **รัฐปคัลภ์ พจนารถ**</h1>
+            <h2>📚 นักศึกษา **วิทยาการคอมพิวเตอร์**</h2>
+            
+            <hr>
+
+            <div class="info-section">
+                <div class="info-item">
+                    <span class="icon">🎂</span>
+                    <strong>อายุ:</strong> 19 ปี
+                </div>
+                
+                <div class="info-item">
+                    <span class="icon">🎓</span>
+                    <strong>สาขา:</strong> วิทยาการคอมพิวเตอร์ (Computer Science)
+                </div>
+                
+                <div class="info-item">
+                    <span class="icon">💡</span>
+                    <strong>ความสนใจ:</strong> การเขียนโปรแกรมและการพัฒนาเว็บไซต์
+                </div>
+
+                <div class="info-item" style="display: block;">
+                    <span class="icon">🛠️</span>
+                    <strong>ทักษะ (Skills):</strong>
+                    <ul class="skills-list">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
